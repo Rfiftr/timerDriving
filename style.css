@@ -1,0 +1,195 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#login-button {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: #005b78;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+}
+
+#form-login {
+    display: none;
+}
+
+#download-button {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background-color: #005b78;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+}
+
+/* Updated Login Form Styling */
+.login-form {
+    position: absolute;
+    top: 200px;
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#close-form {
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.login-form h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #005b78;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #004a60;
+}
+
+.container {
+    max-width: 350px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.name-button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.name-button:hover {
+    background-color: #45a049;
+}
+
+.name-button:focus {
+    background-color: #2b8306;
+    box-shadow: 0px 0px 7px 0px #000000 inset;
+}
+
+.name-driver {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #555;
+}
+
+#else-driver-name {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#start-button, #stop-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+#start-button:hover, #stop-button:hover {
+    background-color: #005b78;
+}
+
+#start-button:focus, #stop-button:focus {
+    box-shadow: 0px 0px 7px 0px #000000 inset;
+
+}
+
+#error-show {
+    color: #FF0000;
+    margin-top: 10px;
+}
+
+.successMessage {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.errorMessage {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FF0000;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}

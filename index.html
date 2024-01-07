@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>מונה שעות נהיגה</title>
+</head>
+<body dir="rtl">  
+  <button id="download-button">הורד נתונים</button>
+  <button id="login-button">הרשמה</button>
+  <div id="form-login" class="login-form">
+    <img src="./images/close-icon.png" id="close-form">
+    <h2>הרשמה</h2>
+    <input id="formNameInput" placeholder="שם">
+    <input id="formPhoneInput" placeholder="טלפון">
+    <button id="add-user">הירשם</button>
+
+    <div id="verificationCodeSection" style="display: none;">
+      <label for="verificationCodeInput">אמת קוד</label>
+      <input type="text" id="verificationCodeInput" required>
+      <button onclick="verifyCode()">אמת קוד</button>
+    </div>
+  </div>
+    <div class="container">
+        <h2>מונה שעות נהיגה</h2>
+        <button class="name-button" onclick="selectDriver('אלחנן סיימון')">אלחנן סיימון</button>
+        <button class="name-button" onclick="selectDriver('עקיבא פחימה')">עקיבא פחימה</button>
+        <div>
+            <p id="else-driver" class="name-driver">או הכנס שם אחר:</p>
+            <input id="else-driver-name" placeholder="הזן שם">
+        </div>
+        <button id="start-button" onclick="startTrip()">התחל נסיעה</button>
+        <button id="stop-button" onclick="stopTrip()">סיים נסיעה</button>
+        <p id="error-show"></p>
+    </div>
+    <div id="successMessageContainer" class="hidden">
+      <p id="messageText"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
